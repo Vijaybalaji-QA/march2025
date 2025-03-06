@@ -29,6 +29,7 @@ public class Zomato {
 		driver = new EdgeDriver(options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.navigate().to("https://www.zomato.com/");
+		driver.manage().window().minimize();
 	}
 	
 	@Before
