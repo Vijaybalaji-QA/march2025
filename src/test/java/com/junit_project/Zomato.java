@@ -105,7 +105,7 @@ public class Zomato {
 	@AfterClass
 	public static void afterClass() {
 		System.out.println("Completed.");
-		driver.quit();
+		driver.close();
 	}
 	
 }
